@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Responses</title>
+</head>
+
+<body>
+    <ol>
+        {% for response in all_responses %}
+        <li>{{ response.name }} voted for {{ response.animal }} </li>
+        {% endfor %}
+    </ol>
+</body>
+
+</html>
