@@ -12,8 +12,10 @@ def add_survey_info(person_name, person_animal):
 	vote_object = Vote(name=person_name, animal=person_animal)
 	session.add(vote_object)
 	session.commit()
+	session.close()
 
 def get_all_survey_info():
 	session = DBSession()
 	all_info = session.query(Vote).all()
+	session.close()
 	return all_info
