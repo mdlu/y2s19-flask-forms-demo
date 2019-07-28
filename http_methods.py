@@ -8,4 +8,4 @@ def homepage():
     else:
         return 'You just made a POST request!'
 
-app.run(debug=True)
+app.run(debug=True, host='0.0.0.0')
