@@ -25,4 +25,5 @@ def all_results():
     all_info = get_all_survey_info()
     return render_template('all.html', all_responses=all_info)
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
