@@ -1,1 +1,1 @@
-web: gunicorn posting_forms:app
+web: gunicorn app:app 
